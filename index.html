@@ -1,58 +1,90 @@
 <!DOCTYPE html>
 
 <html>
-  <body style = "background-color:maroon;">
+
+  <head>
+    <title>Miles Calculator</title>
+  </head>
+
+  <body style = "background-color:white;">
     <style>
       table
       {
         border: 1px solid black;
-        border-spacing: 10px
+        border-collapse: collapse;
+        border-spacing: 10px;
+        font-family: arial, sans-serif;
+        width: 100%;
+        position: relative;
+        left: 200px;
       }
+      td, th
+      {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+      }
+      tr:nth-child(even)
+      {
+        background-color: grey;
+      }
+
+
     </style>
-    <h1 style="text-align:center;"> Miles Calculator </h1>
-    <p> Calculate how many miles you need </p>
+    <div>
+      <h1 style="text-align:center;"> Miles Calculator </h1>
+      <p> Calculate how many miles you need </p>
+    </div>
+
+  <div>
+
     <hr/>
     <br/>
 
-    <p> The Ultimate Miles Guru Tool </p>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <p> Enter the orgin city and the destination city and you will be given
+        the number of miles needed for select programs
+    </p>
+
     <br/>
     <br/>
     <br/>
 
     <form>
-      Orgin City (IATA Code): <br>
-      <input type="text" name="Orgin City"> <br>
-      Destination City (IATA Code): <br>
-      <input type = "text" name="Destination City"> <br>
+      Orgin City (IATA Code):</br>
+      <input type="text" name="Orgin City"> </br>
+      Destination City (IATA Code): </br>
+      <input type = "text" name= "Destination City">  </br>
+      <input type="submit"> </br>
     </form>
+
+  </div>
+
 
     <!-- Creation of the table !-->
 
-    <table style="width:100%">
+    <table style= "width:50%">
+      <caption>Mileage Chart</caption>
       <tr>
         <th> Program </th>
         <th> Miles needed </th>
       </tr>
       <tr>
-        <td> American <th>
+        <td> American </td>
+        <td>
       </tr>
       <tr>
-        <td> United <th>
+        <td> United </td>
+        <td>
       </tr>
       <tr>
-        <td> Delta <th>
+        <td> Delta </td>
+        <td>
       </tr>
       <tr>
-        <td> British Airways <th>
+        <td> British Airways </td>
+        <td>
       </tr>
-
     </table>
+
   </body>
 </html>
